@@ -47,7 +47,7 @@ body {
   height: 35px;
 }
 
-.content {
+.header__content {
   position: absolute;
   top: 40%;
   left: 50%;
@@ -57,7 +57,7 @@ body {
   text-align: center;
 }
 
-.content__title {
+.header__title {
   color: #fff;
   text-transform: uppercase;
 
@@ -67,7 +67,7 @@ body {
   margin-bottom: 60px;
 }
 
-.content__title--main {
+.header__title--main {
   display: block;
   font-size: 60px;
   font-weight: 400;
@@ -86,7 +86,7 @@ body {
   */
 }
 
-.content__title--sub {
+.header__title--sub {
   display: block;
   font-size: 20px;
   font-weight: 700;
