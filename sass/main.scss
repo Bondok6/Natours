@@ -43,90 +43,92 @@ body {
 
   position: relative;
 
-  .header__logo-box {
+  &__logo-box {
     position: absolute;
     top: 4rem;
     left: 4rem;
-
-    .header__logo {
-      height: 3.5rem;
-    }
   }
 
-  .header__content {
+  &__logo {
+    height: 3.5rem;
+  }
+
+  &__content {
     position: absolute;
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-
-    .header__title {
-      color: $color-white;
-      text-transform: uppercase;
-      backface-visibility: hidden;
-      margin-bottom: 6rem;
-
-      .header__title--main {
-        display: block;
-        font-size: 6rem;
-        font-weight: 400;
-        letter-spacing: 3.5rem;
-        animation: moveInLeft 1s ease-out;
-      }
-
-      .header__title--sub {
-        display: block;
-        font-size: 2rem;
-        font-weight: 700;
-        letter-spacing: 1.75rem;
-
-        animation: moveInRight 1s ease-out;
-      }
-    }
   }
 
-  @keyframes moveInLeft {
-    0% {
-      opacity: 0;
-      transform: translateX(-10rem);
+  &__title {
+    color: $color-white;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    margin-bottom: 6rem;
+
+    &--main {
+      display: block;
+      font-size: 6rem;
+      font-weight: 400;
+      letter-spacing: 3.5rem;
+      animation: moveInLeft 1s ease-out;
     }
-    80% {
-      transform: translateX(1rem);
-    }
-    100% {
-      opacity: 1;
-      transform: translate(0);
+
+    &--sub {
+      display: block;
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: 1.75rem;
+
+      animation: moveInRight 1s ease-out;
     }
   }
+}
 
-  @keyframes moveInRight {
-    0% {
-      opacity: 0;
-      transform: translateX(10rem);
-    }
-    80% {
-      transform: translateX(-1rem);
-    }
-    100% {
-      opacity: 1;
-      transform: translate(0);
-    }
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  80% {
+    transform: translateX(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+  80% {
+    transform: translateX(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
   }
 
-  @keyframes moveInBottom {
-    0% {
-      opacity: 0;
-      transform: translateY(3rem);
-    }
-
-    100% {
-      opacity: 1;
-      transform: translate(0);
-    }
+  100% {
+    opacity: 1;
+    transform: translate(0);
   }
+}
 
-  .btn:link,
-  .btn:visited {
+.btn {
+  &:link,
+  &:visited {
     display: inline-block;
     text-decoration: none;
     text-transform: uppercase;
@@ -137,22 +139,31 @@ body {
     position: relative;
   }
 
-  .btn:hover {
+  &:hover {
     transform: translateY(-3px);
     box-shadow: 0 1rem 1.5rem rgba($color-black, 0.2);
+
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
   }
 
-  .btn:active {
+  &:active {
     transform: translateY(-1px);
     box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
   }
 
-  .btn--white {
+  &--white {
     background-color: $color-white;
     color: $color-gray-dark;
+
+    &::after {
+      background-color: $color-white;
+    }
   }
 
-  .btn::after {
+  &::after {
     content: "";
     display: inline-block;
     height: 100%;
@@ -165,19 +176,8 @@ body {
     transition: all 0.4s;
   }
 
-  .btn--white::after {
-    background-color: $color-white;
-  }
-
-  .btn:hover::after {
-    transform: scaleX(1.4) scaleY(1.6);
-    opacity: 0;
-  }
-
-  .btn--animated {
+  &--animated {
     animation: moveInBottom 0.5s ease-out 0.75s;
-
-    /* to start with opacity 0 even if I put a delay(0.75s) */
     animation-fill-mode: backwards;
   }
 }
