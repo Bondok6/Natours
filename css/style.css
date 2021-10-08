@@ -97,6 +97,9 @@ body {
 .u-mb-small {
   margin-bottom: 1.5rem; }
 
+.u-bt-large {
+  margin-bottom: 10rem; }
+
 .btn:link, .btn:visited {
   display: inline-block;
   text-decoration: none;
@@ -123,6 +126,12 @@ body {
   color: #777; }
   .btn--white::after {
     background-color: #fff; }
+
+.btn--green {
+  background-color: #55c57a;
+  color: #fff; }
+  .btn--green::after {
+    background-color: #55c57a; }
 
 .btn::after {
   content: "";
@@ -226,6 +235,8 @@ body {
       transform: rotateY(180deg); }
       .card__side--back--1 {
         background-image: linear-gradient(to right bottom, #ffb900, #ff7730); }
+      .card__side--back--2 {
+        background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
       .card__side--back--3 {
         background-image: linear-gradient(to right bottom, #2298ff, #5643fa); }
   .card:hover .card__side--front {
@@ -275,6 +286,23 @@ body {
         padding: 1rem; }
         .card__details ul li:not(:last-child) {
           border-bottom: 1px solid #eee; }
+  .card__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center; }
+  .card__price-box {
+    text-align: center;
+    margin-bottom: 8rem;
+    color: #fff; }
+  .card__price-only {
+    font-size: 1.4rem;
+    text-transform: uppercase; }
+  .card__price-value {
+    font-size: 6rem;
+    font-weight: 100; }
 
 .header {
   height: 95vh;
@@ -338,5 +366,5 @@ body {
 
 .section-tours {
   background-color: #f7f7f7;
-  padding: 25rem 0 50rem;
+  padding: 25rem 0 15rem;
   margin-top: -11rem; }
