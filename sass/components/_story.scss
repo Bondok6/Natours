@@ -1,0 +1,20 @@
+.story {
+  width: 75%;
+  margin: 0 auto;
+  background-color: $color-white;
+  box-shadow: 0 3rem 6rem rgba($color-black, 0.1);
+  border-radius: 3px;
+  padding: 6rem;
+  font-size: $default-font-size;
+
+  &__shape {
+    width: 15rem;
+    height: 15rem;
+    background-color: orangered;
+    // border-radius: 50%;
+
+    float: left;
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%);
+  }
+}
