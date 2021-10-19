@@ -13,7 +13,7 @@
 ## Additional Used
 
 - Google Fonts
-- 
+- Linea Icons
 - npm
 
 ## ⚒⚒ Still Working On It ⚒⚒
