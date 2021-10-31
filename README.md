@@ -6,9 +6,9 @@
 
 ## Built with
 
-- Html
-- Css
-- Sass
+- HTML  
+- CSS
+- SASS
 
 ## Additional Used
 
