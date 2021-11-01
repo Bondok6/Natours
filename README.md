@@ -1,7 +1,19 @@
 # Natours
-> ### Pure CSS website to practice the latest advanced CSS features.
+> ### Pure CSS website to practice the latest advanced CSS features
 
 
 ## [Live Demo](https://bondok6.github.io/Natours/)
 
-## ⚒⚒ Still Working On It ⚒⚒
+## Built with
+
+- HTML  
+- CSS
+- SASS
+
+## Additional Used
+
+- Google Fonts
+- Linea Icons
+- npm
+
+# ⚒ Still Working On It ⚒
