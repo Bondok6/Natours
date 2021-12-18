@@ -8,7 +8,7 @@
 
 - HTML  
 - CSS
-- SCSS
+- SASS - SCSS
 
 ## Additional Used
 
