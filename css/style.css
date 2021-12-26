@@ -94,6 +94,9 @@ body {
 .u-mb-large {
   margin-bottom: 8rem; }
 
+.u-mb-medium {
+  margin-bottom: 4rem; }
+
 .u-mb-small {
   margin-bottom: 1.5rem; }
 
@@ -107,7 +110,7 @@ body {
   height: 100%;
   width: 100%;
   z-index: -1;
-  opacity: .15; }
+  opacity: 0.15; }
   .bg-video__content {
     height: 100%;
     width: 100%;
@@ -431,3 +434,17 @@ body {
 .section-stories {
   position: relative;
   padding: 15rem 0; }
+
+.section-book {
+  padding: 15rem 0;
+  background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
+
+.book {
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/nat-10.jpg);
+  background-size: cover;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+  height: 50rem; }
+  .book__form {
+    width: 50%;
+    padding: 6rem; }
