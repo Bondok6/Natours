@@ -229,6 +229,42 @@ body {
   .feature-box:hover {
     transform: scale(1.03) translateY(-1.5rem); }
 
+.form__group:not(:last-child) {
+  margin-bottom: 2rem; }
+
+.form__input {
+  font-size: 1.5rem;
+  color: inherit;
+  font-family: inherit;
+  padding: 1.5rem 2rem;
+  border-radius: 2px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 90%;
+  display: block;
+  border-bottom: 3px solid transparent; }
+  .form__input:focus {
+    outline: none;
+    box-shadow: 0 0.5rem 1.5rem black;
+    border-bottom: 3px solid #55c57a; }
+  .form__input:focus:invalid {
+    border-bottom: 3px solid #ff7730; }
+  .form__input::-webkit-input-placeholder {
+    color: #999; }
+
+.form__label {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-left: 2rem;
+  margin-top: 0.7rem;
+  display: block;
+  transition: all 0.3s; }
+
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4rem); }
+
 .card {
   perspective: 150rem;
   -moz-perspective: 150rem;
