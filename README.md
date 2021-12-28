@@ -18,7 +18,7 @@
 
 ## Live Demo
 
-[Natours](https://bondok6.github.io/Natours/)
+[Natours Live Demo](https://bondok6.github.io/Natours/)
 
 ## Getting Started
 
