@@ -4,59 +4,75 @@
   font-size: 1.4rem;
   color: $color-gray-light-1;
 
+  @include respond(tab-port) {
+    padding: 8rem 0;
+  }
+
   &__logo-box {
     text-align: center;
     margin-bottom: 8rem;
-}
 
-&__logo {
+    @include respond(tab-port) {
+      margin-bottom: 6rem;
+    }
+  }
+
+  &__logo {
     width: 15rem;
     height: auto;
-}
+  }
 
-&__navigation {
+  &__navigation {
     border-top: 1px solid $color-gray-dark;
     padding-top: 2rem;
     display: inline-block;
-}
 
-&__list {
+    @include respond(tab-port) {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  &__list {
     list-style: none;
-}
+  }
 
-&__item {
+  &__item {
     display: inline-block;
 
     &:not(:last-child) {
-        margin-right: 1.5rem;
+      margin-right: 1.5rem;
     }
-}
+  }
 
-&__link {
+  &__link {
     &:link,
     &:visited {
-        color: $color-gray-light-1;
-        background-color: #333;
-        text-decoration: none;
-        text-transform: uppercase;
-        display: inline-block;
-        transition: all .2s;
+      color: $color-gray-light-1;
+      background-color: #333;
+      text-decoration: none;
+      text-transform: uppercase;
+      display: inline-block;
+      transition: all 0.2s;
     }
 
     &:hover,
     &:active {
-        color: $color-primary;
-        box-shadow: 0 1rem 2rem rgba($color-black, .4);
-        transform: rotate(5deg) scale(1.3);
+      color: $color-primary;
+      box-shadow: 0 1rem 2rem rgba($color-black, 0.4);
+      transform: rotate(5deg) scale(1.3);
     }
-}
+  }
 
-&__copyright {
+  &__copyright {
     border-top: 1px solid $color-gray-dark;
     padding-top: 2rem;
     width: 80%;
     float: right;
-}
 
-
+    @include respond(tab-port) {
+      width: 100%;
+      float: none;
+    }
+  }
 }
