@@ -65,7 +65,7 @@ Feel free to check the [issues page](../../issues/).
 
 ## Acknowledgments
 
-- Inspired by Jonas Schmedtmann for his online course **Advanced CSS and Sass**
+- Inspired by Jonas Schmedtmann for his online course **Advanced CSS and SASS**
 
 ## Show your support
 
