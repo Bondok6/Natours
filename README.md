@@ -20,7 +20,7 @@
 
 [Natours Live Demo](https://bondok6.github.io/Natours/)
 
-## Objectives && What I learned
+## Objectives & What I learned
 
 - How to clip parts of elements using `clip-path`.
 - How to use the `background-clip` property.
