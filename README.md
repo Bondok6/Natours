@@ -72,11 +72,3 @@ Feel free to check the [issues page](../../issues/).
 ## Acknowledgments
 
 - Inspired by Jonas Schmedtmann for his online course **Advanced CSS and SASS**
-
-## Show your support
-
-Give a ⭐️ if you like this project!
-
-## 📝 License
-
-This project is [MIT](./MIT.md) licensed.
